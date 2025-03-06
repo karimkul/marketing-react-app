@@ -1,0 +1,68 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set base font size */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* Body styles */
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #555;
+    max-width: 144rem; /* Limit the max width of content */
+    margin: 0 auto; /* Center the body content */
+    padding: 0;
+}
+
+/* Links and buttons focus style for accessibility */
+a:focus,
+button:focus {
+    outline: 3px solid #f39c12; /* Yellow outline on focus */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* Reduce font size on smaller screens for better readability */
+    }
+}
+
+/* Additional helpful resets */
+a,
+button {
+    text-decoration: none; /* Remove underlines from links */
+    cursor: pointer; /* Change cursor to pointer for clickable elements */
+}
+
+/* Set default styles for heading elements for consistency */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin-bottom: 1rem; /* Space out headings */
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem; /* Add space between paragraphs */
+}
+
+/* List styles */
+ul {
+    list-style: none; /* Remove default list bullets */
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.5rem; /* Space out list items */
+}

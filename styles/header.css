@@ -1,0 +1,93 @@
+/* General Styles */
+.header {
+    margin: 0 auto;
+    padding: 4rem 2rem; /* Simplified padding */
+    width: 100%;
+    position: relative;
+}
+
+/* Navigation Bar */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 1rem;
+}
+
+/* Logo Styles */
+.header-logo {
+    height: 5.2rem;
+    width: 18.2rem;
+    outline: none; /* Remove outline from logo */
+    border: none; /* Remove any border from logo */
+}
+
+/* Navigation List Styles */
+.header-nav-list {
+    display: flex;
+    gap: 2rem; /* Space between items */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* Navigation Link Styles */
+.header-nav-link:link,
+.header-nav-link:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #8a94a6;
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Remove focus outline and border from links */
+.header-nav-link:focus {
+    outline: none; /* Remove default focus outline */
+    border: none; /* Remove border on focus */
+}
+
+.header-nav-link:hover {
+    color: #377dff;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.header-nav-link-btn {
+    height: 5.7rem;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 0 3.3rem; /* Simplified padding */
+    border-radius: 1rem;
+    background-color: #377dff;
+    color: #ffffff;
+    border: none; /* No border by default */
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+/* Remove focus outline and border from buttons */
+.header-nav-link-btn:focus {
+    outline: none; /* Remove focus outline from button */
+    border: none; /* Remove focus border from button */
+}
+
+.header-nav-link-btn:hover {
+    color: blue;
+    background-color: rgb(16, 182, 237);
+    border: 1px solid blue;
+}
+
+/* Space Between Icon and Link */
+.header-nav-list li img {
+    margin-left: 1.5rem; /* Adds space between the anchor and the icon */
+    outline: none; /* Remove outline from the image */
+}
+
+/* Smooth Hover Transition for Links and Buttons */
+.header-nav-link,
+.header-nav-link-btn {
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
