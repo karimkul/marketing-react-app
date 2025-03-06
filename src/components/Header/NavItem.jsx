@@ -7,6 +7,7 @@ function NavItem({ text }) {
             <img
                 src="/assets/icons/icon-chevron-down-2.png"
                 alt="Chevron Icon"
+                className="chevron-icon"
             />
         </li>
     );

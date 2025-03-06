@@ -1,10 +1,10 @@
 import NavButton from "./NavButton";
 import NavItem from "./NavItem";
 
-function NavLinks() {
+function NavLinks({ isMenuOpen }) {
     return (
-        <nav className="header-links">
-            <ul className="header-nav-list">
+        <nav className={`header-links ${isMenuOpen ? "open" : ""}`}>
+            <ul className={`header-nav-list ${isMenuOpen ? "open" : ""}`}>
                 <NavItem text="Home" />
                 <NavItem text="Pages" />
                 <NavItem text="Blog" />

@@ -1,12 +1,10 @@
-/* General Styles */
 .header {
     margin: 0 auto;
-    padding: 4rem 2rem; /* Simplified padding */
+    padding: 4rem 2rem;
     width: 100%;
     position: relative;
 }
 
-/* Navigation Bar */
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -15,63 +13,48 @@
     padding: 0 1rem;
 }
 
-/* Logo Styles */
 .header-logo {
     height: 5.2rem;
     width: 18.2rem;
-    outline: none; /* Remove outline from logo */
-    border: none; /* Remove any border from logo */
 }
 
-/* Navigation List Styles */
 .header-nav-list {
     display: flex;
-    gap: 2rem; /* Space between items */
+    gap: 2rem;
     align-items: center;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-/* Navigation Link Styles */
 .header-nav-link:link,
 .header-nav-link:visited {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
     color: #8a94a6;
-    transition: color 0.3s ease; /* Smooth hover transition */
-}
-
-/* Remove focus outline and border from links */
-.header-nav-link:focus {
-    outline: none; /* Remove default focus outline */
-    border: none; /* Remove border on focus */
 }
 
 .header-nav-link:hover {
     color: #377dff;
     text-decoration: underline;
 }
+.header-nav-link a img {
+    margin-left: 1rem;
+}
 
-/* Button Styles */
 .header-nav-link-btn {
     height: 5.7rem;
     font-weight: 600;
     font-size: 2rem;
-    padding: 0 3.3rem; /* Simplified padding */
+    padding: 0 3.3rem;
     border-radius: 1rem;
     background-color: #377dff;
     color: #ffffff;
-    border: none; /* No border by default */
+    border: none;
     margin-left: 2rem;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-
-/* Remove focus outline and border from buttons */
-.header-nav-link-btn:focus {
-    outline: none; /* Remove focus outline from button */
-    border: none; /* Remove focus border from button */
 }
 
 .header-nav-link-btn:hover {
@@ -80,14 +63,84 @@
     border: 1px solid blue;
 }
 
-/* Space Between Icon and Link */
-.header-nav-list li img {
-    margin-left: 1.5rem; /* Adds space between the anchor and the icon */
-    outline: none; /* Remove outline from the image */
+.header-icon-menu {
+    display: none;
 }
 
-/* Smooth Hover Transition for Links and Buttons */
-.header-nav-link,
-.header-nav-link-btn {
-    transition: all 0.3s ease; /* Smooth hover transition */
+.hamburger-icon {
+    width: 2rem;
+    height: 2rem;
+}
+.header-nav-link {
+    margin-right: 2rem;
+}
+
+.chevron-icon {
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 940px) {
+    .chevron-icon {
+        display: none;
+    }
+    .header-nav-list {
+        gap: 1rem;
+    }
+
+    .header-nav-link-btn {
+        font-size: 1.6rem;
+        padding: 0 2.5rem;
+        height: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Show the menu button */
+    .header-icon-menu {
+        display: block;
+        background-color: #377dff; /* Blue background */
+        color: #ffffff; /* White text */
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .header-icon-menu:hover {
+        background-color: rgb(16, 182, 237);
+        color: blue;
+    }
+
+    /* Change styles when menu is open */
+    .header-icon-menu.open {
+        background-color: blue;
+        color: white;
+    }
+
+    /* Navigation list styles */
+    .header-nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #ffffff;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-nav-list.open {
+        display: flex;
+    }
+
+    .header-nav-list li {
+        text-align: center;
+        padding: 1rem;
+    }
 }

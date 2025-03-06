@@ -1,14 +1,32 @@
+import { useState } from "react";
 import "../../../styles/header.css";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 
 function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <header className="header">
             <div className="header-nav">
                 <Logo />
-                <NavLinks />
-                {/* <img className="header-icon-menu" src="./assets/icon-menu 1.png" alt="img" /> */}
+                <button
+                    className="header-icon-menu"
+                    onClick={toggleMenu}
+                    aria-label="Toggle Navigation"
+                >
+                    Click to open the menu
+                    {/* <img
+                        src="/assets/icons/icon-menu.png"
+                        alt="Menu Icon"
+                        className="hamburger-icon"
+                    /> */}
+                </button>
+                <NavLinks isMenuOpen={isMenuOpen} />
             </div>
         </header>
     );
