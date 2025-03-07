@@ -1,5 +1,16 @@
+import SponsorsHeader from "./SponsorsHeader";
+import SponsorsList from "./SponsorsList";
+import "/styles/sponsors-section.css";
+
 function SponsorsSection() {
-    return <div>SPONSORS SECTION</div>;
+    return (
+        <section class="sponsors-section">
+            <div class="main-sponsors">
+                <SponsorsHeader />
+                <SponsorsList />
+            </div>
+        </section>
+    );
 }
 
 export default SponsorsSection;

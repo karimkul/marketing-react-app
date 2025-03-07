@@ -1,0 +1,131 @@
+.sponsors-section {
+    background-color: #fafbfc;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+.main-sponsors {
+    max-width: 124rem;
+    margin: 0 auto;
+    padding: 10.5rem 0;
+}
+.main-sponsors-in {
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 7.3rem;
+    color: #323b4b;
+    text-align: center;
+}
+.main-sponsors-text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: #8a94a6;
+    text-align: center;
+}
+.helper-margin-top {
+    margin-top: 2rem;
+}
+
+/* .main-sponsors-cards {
+    display: flex;
+    gap: 2.3rem;
+    width: 100%;
+    margin-top: 8.8rem;
+} */
+.main-sponsors-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.3rem;
+    width: 100%;
+    margin-top: 8.8rem;
+    justify-content: center; /* Ensures even alignment */
+}
+.main-sponsors-box {
+    width: 39.2rem;
+    /* width: 100%; */
+}
+.sponsors-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8.7rem 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 2.2rem;
+}
+.sponsors-icon1 {
+    width: 21.1rem;
+    height: 5.8rem;
+}
+.sponsors-icon2 {
+    width: 17.7rem;
+    height: 5.2rem;
+}
+.sponsors-icon3 {
+    width: 21.4rem;
+    height: 5rem;
+}
+.sponsors-card-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    color: #858a8f;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-sponsors-in {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .main-sponsors-text {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
+    .main-sponsors-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .main-sponsors-box {
+        width: 90%; /* Make cards take full width on smaller screens */
+    }
+
+    .sponsors-icon1,
+    .sponsors-icon2,
+    .sponsors-icon3 {
+        width: 18rem; /* Adjust icon size */
+    }
+
+    .sponsors-card-text {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-sponsors-in {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .main-sponsors-text {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    .sponsors-card {
+        padding: 6rem 0;
+    }
+
+    .sponsors-icon1,
+    .sponsors-icon2,
+    .sponsors-icon3 {
+        width: 16rem; /* Adjust icon size further */
+    }
+}
