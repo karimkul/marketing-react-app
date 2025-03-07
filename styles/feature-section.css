@@ -74,3 +74,24 @@
     width: 2.7rem;
     color: #377dff;
 }
+
+@media (max-width: 480px) {
+    .main-feature-in {
+        font-size: 3.2rem; /* Further reduce font size */
+    }
+
+    .main-feature-text {
+        font-size: 1.4rem;
+    }
+
+    .main-feature-arr,
+    .main-feature-arrl {
+        height: 5rem; /* Even smaller arrow size */
+        width: 5rem;
+    }
+
+    .main-feature-arrow {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+}
