@@ -1,5 +1,5 @@
 import FeatureSection from "./FeatureSection";
-import HeroSection from "./HeroSection";
+import HeroSection from "./Hero_section/HeroSection";
 import SponsorsSection from "./SponsorsSection";
 import TeamSection from "./TeamSection";
 
