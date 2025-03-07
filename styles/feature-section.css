@@ -1,0 +1,76 @@
+/* Feature Section */
+.feature-section {
+    background-color: #fafbfc;
+    width: 100%; /* Ensures the background color spans the full width */
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 10.8rem;
+    padding-bottom: 10.8rem;
+    margin: 0; /* Ensures there is no margin that could cause white space */
+}
+
+.main-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 124rem; */
+    margin: 0 auto;
+}
+
+.main-feature-in {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #323b4b;
+    margin-bottom: 3.5rem;
+}
+
+.main-feature-text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: #8a94a6;
+}
+
+/* Helper for spacing */
+.helper {
+    margin-bottom: 7.5rem;
+}
+
+.main-feature-imgBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-feature-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.main-feature-arr,
+.main-feature-arrl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+
+.main-feature-arrl {
+    right: 0;
+}
+
+.main-feature-arrow {
+    height: 2.6rem;
+    width: 2.7rem;
+    color: #377dff;
+}

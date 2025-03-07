@@ -16,7 +16,7 @@ body {
     line-height: 1.6;
     font-weight: 400;
     color: #555;
-    max-width: 144rem; /* Limit the max width of content */
+    max-width: 100%; /* Limit the max width of content */
     margin: 0 auto; /* Center the body content */
     padding: 0;
 }

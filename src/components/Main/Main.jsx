@@ -1,7 +1,7 @@
-import FeatureSection from "./FeatureSection";
+import FeatureSection from "./Feature_section/FeatureSection";
 import HeroSection from "./Hero_section/HeroSection";
-import SponsorsSection from "./SponsorsSection";
-import TeamSection from "./TeamSection";
+import SponsorsSection from "./Sponsors_section/SponsorsSection";
+import TeamSection from "./Team_section/TeamSection";
 
 function Main() {
     return (
