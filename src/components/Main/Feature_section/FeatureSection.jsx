@@ -4,7 +4,7 @@ import "/styles/feature-section.css";
 
 function FeatureSection() {
     return (
-        <section class="feature-section">
+        <section className="feature-section">
             <MainFeature />
             <FeatureImage />
         </section>

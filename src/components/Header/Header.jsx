@@ -20,11 +20,6 @@ function Header() {
                     aria-label="Toggle Navigation"
                 >
                     Click to open the menu
-                    {/* <img
-                        src="/assets/icons/icon-menu.png"
-                        alt="Menu Icon"
-                        className="hamburger-icon"
-                    /> */}
                 </button>
                 <NavLinks isMenuOpen={isMenuOpen} />
             </div>

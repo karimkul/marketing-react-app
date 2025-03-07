@@ -1,0 +1,121 @@
+.team-section {
+    padding: 10.8rem 6rem 12.3rem 6rem;
+}
+
+.main-team {
+    max-width: 124rem;
+    margin: 0 auto;
+}
+
+.main-team-in {
+    text-align: center;
+    font-weight: 700;
+    font-size: 6rem;
+    color: #323b4b;
+    margin-bottom: 3.5rem;
+}
+
+.main-team-text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: #8a94a6;
+    text-align: center;
+}
+
+.main-team-cardBox {
+    display: flex;
+    flex-wrap: wrap; /* Ensure cards wrap when needed */
+    justify-content: space-between; /* Center-align cards */
+    gap: 5rem; /* Add spacing between cards */
+    max-width: 106rem;
+    margin: 9.9rem auto 0 auto;
+}
+
+.main-team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem; /* Set a max width for cards */
+    text-align: center;
+}
+
+.team-card-img {
+    width: 100%;
+    max-width: 18.1rem;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 2.7rem;
+}
+
+.team-card-name {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #323b4b;
+    margin-bottom: 1.3rem;
+}
+
+.team-card-position {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #8a94a6;
+    margin-bottom: 1.3rem;
+}
+
+.team-card-mediaBox {
+    display: flex;
+    gap: 2.7rem;
+}
+
+.main-team-btnBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-team-btn {
+    width: 90%; /* Responsive width */
+    max-width: 60rem;
+    padding: 2rem;
+    color: #377dff;
+    background-color: #e5f1ff;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    margin-top: 10.7rem;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.main-team-btn:hover {
+    color: #ffffff;
+    background-color: #377dff;
+    transition: 0.7s;
+}
+
+/* 📌 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .team-section {
+        padding: 5rem 2rem; /* Reduce padding on smaller screens */
+    }
+
+    .main-team-in {
+        font-size: 4rem; /* Adjust heading size */
+    }
+
+    .main-team-text {
+        font-size: 1.6rem; /* Adjust paragraph text */
+        line-height: 2.8rem;
+    }
+
+    .main-team-card {
+        width: 100%; /* Make each card take full width */
+        max-width: 35rem; /* Limit size for aesthetics */
+    }
+
+    .main-team-btn {
+        font-size: 1.6rem;
+        padding: 1.5rem;
+    }
+}
