@@ -51,3 +51,82 @@
     font-weight: 600;
     text-decoration: none;
 }
+
+@media (max-width: 1164px) {
+    .hero-right-in {
+        font-size: 5rem; /* Smaller text for heading at 1164px */
+        line-height: 6rem;
+    }
+
+    .hero-right-text {
+        font-size: 1.8rem; /* Smaller text for description at 1164px */
+        line-height: 3rem;
+    }
+
+    .hero-right-link {
+        font-size: 1.8rem; /* Adjusted font size for the link */
+    }
+}
+
+/* Responsive Styles for 988px Screens */
+@media (max-width: 988px) {
+    .hero-right-in {
+        font-size: 4.5rem; /* Slightly smaller text for heading at 988px */
+        line-height: 5.5rem;
+    }
+
+    .hero-right-text {
+        font-size: 1.7rem; /* Slightly smaller text for description at 988px */
+        line-height: 2.8rem;
+    }
+
+    .hero-right-link {
+        font-size: 1.7rem; /* Slightly smaller link text */
+    }
+}
+
+/* Responsive Styles for 768px Screens */
+@media (max-width: 886px) {
+    .main-hero {
+        flex-direction: column;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .hero-left-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .hero-right-in {
+        font-size: 4rem; /* Smaller text for heading */
+        line-height: 5rem;
+    }
+
+    .hero-right-text {
+        font-size: 1.6rem; /* Smaller text for description */
+        line-height: 2.8rem;
+    }
+
+    .hero-right-link {
+        font-size: 1.8rem; /* Adjusted for readability */
+    }
+}
+
+/* Even Smaller Text for 480px Screens */
+@media (max-width: 480px) {
+    .hero-right-in {
+        font-size: 3rem; /* Further smaller text */
+        line-height: 4rem;
+    }
+
+    .hero-right-text {
+        font-size: 1.4rem; /* Even smaller description */
+        line-height: 2.5rem;
+    }
+
+    .hero-right-link {
+        font-size: 1.6rem; /* Adjusted for mobile screens */
+    }
+}
